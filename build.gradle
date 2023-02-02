@@ -36,8 +36,10 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+    //useJUnitPlatform()
     testLogging.showStandardStreams = true
+    testLogging.exceptionFormat = 'full'
+    maxParallelForks = Runtime.runtime.availableProcessors() - 1
     systemProperties System.getProperties()
 }
 
