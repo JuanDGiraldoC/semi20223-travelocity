@@ -2,6 +2,7 @@ package com.travelocity.stepdefinitions;
 
 import com.travelocity.tasks.SeleccionarDestinoVuelos;
 import com.travelocity.tasks.SeleccionarOrigenVuelos;
+import com.travelocity.tasks.SeleccionarTipo;
 import com.travelocity.userinterfaces.VuelosEncontrados;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
@@ -21,6 +22,13 @@ public class VuelosRedondosStepDefinitions {
     @Cuando("quiera viajar a {string} por {int} dias")
     public void viajeDestinoConDias(String destino, Integer cantidadDias) {
         OnStage.theActorInTheSpotlight().attemptsTo(
+                SeleccionarDestinoVuelos.ParaViajarHaciaYDias(destino, cantidadDias)
+        );
+    }
+    @Cuando("quiera viajar a {string} en clase economica premium por {int} dias")
+    public void viajeDestinoConDiasEnClaseEconomicaPremium(String destino, Integer cantidadDias) {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                SeleccionarTipo.ClaseEconomicaPremium(),
                 SeleccionarDestinoVuelos.ParaViajarHaciaYDias(destino, cantidadDias)
         );
     }

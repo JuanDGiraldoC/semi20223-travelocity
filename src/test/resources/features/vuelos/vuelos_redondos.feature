@@ -9,10 +9,9 @@ Característica: Vuelos redondos
     Cuando quiera viajar a "Cancún" por 15 dias
     Entonces debe obtener alguna opcion de vuelo
 
-  @manual
   Escenario: Vuelo redondo en clase economica premium
-    Dado Diego esta en "Medellín"
-    Cuando quiera viajar a "Cancún" en clase economica premium por 15 dias
+    Dado Diego esta en "Cali"
+    Cuando quiera viajar a "Buenos Aires" en clase economica premium por 15 dias
     Entonces debe obtener alguna opcion de vuelo
 
   @manual
