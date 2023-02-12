@@ -9,14 +9,10 @@ import org.openqa.selenium.Keys;
 
 public class SeleccionarDestinoVuelos {
 
-    public static Performable ParaViajarHaciaYDias (String destino, Integer diasViaje){
+    public static Performable paraViajarHacia(String destino){
         return Task.where("quiera viajar hacia {0} por {1} días",
                 Click.on(DetalleVuelos.BUT_DESTINO),
-                Enter.theValue(destino).into(DetalleVuelos.IN_DESTINO).thenHit(Keys.ENTER),
-                Click.on(DetalleVuelos.SELECT_FECHA_REGRESO),
-                Click.on(DetalleVuelos.FECHA_REGRESO),
-                Click.on(DetalleVuelos.BUT_LISTO),
-                Click.on(DetalleVuelos.BUT_BUSCAR)
+                Enter.theValue(destino).into(DetalleVuelos.IN_DESTINO).thenHit(Keys.ENTER)
         );
     }
 

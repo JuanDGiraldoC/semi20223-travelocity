@@ -7,10 +7,10 @@ import net.serenitybdd.screenplay.actions.Click;
 
 public class SeleccionarTipo {
 
-    public static Performable ClaseEconomicaPremium(){
+    public static Performable claseEconomicaPremium(){
         return Task.where("en Clase economica Premium",
                 Click.on(DetalleVuelos.BUT_TIPO_CLASE),
-                Click.on(DetalleVuelos.SPAN_CLASE_ECON_PREMIUM)
+                Click.on(DetalleVuelos.A_CLASE_ECON_PREMIUM)
                 );
     }
 
