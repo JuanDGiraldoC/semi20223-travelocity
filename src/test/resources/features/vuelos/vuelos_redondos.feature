@@ -25,4 +25,4 @@ Característica: Vuelos redondos
     Dado Juan esta en "Medellin"
     Cuando quiera viajar a "Cancún" agregando un hospedaje por 8 dias
     Entonces debe obtener alguna opcion de vuelo
-    Y debe obtener alguna opcion de hospedaje
+    Y debe obtener al menos una opcion de hospedaje

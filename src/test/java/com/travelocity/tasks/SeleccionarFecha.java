@@ -12,7 +12,7 @@ public class SeleccionarFecha {
         return Task.where("Selecciona los {0} dias de hospedaje",
                 Click.on(DetalleHospedaje.SELECT_FECHA_CHECK_OUT),
                 Click.on(DetalleHospedaje.FECHA_CHECK_OUT),
-                Click.on(DetalleHospedaje.BUT_LISTO),
+                Click.on(DetalleHospedaje.BUT_LISTO_CALENDAR),
                 Click.on(DetalleHospedaje.BUT_BUSCAR)
                 );
     }

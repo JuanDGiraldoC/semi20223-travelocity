@@ -37,7 +37,7 @@ public class VuelosRedondosStepDefinitions {
     }
     @Entonces("debe obtener alguna opcion de vuelo")
     public void viajeObtenerAlgunaOpcion() {
-        Ensure.that(HotelesEncontrados.LIST_HOTELES_ENCONTRADOS);
+        Ensure.that(HotelesEncontrados.LIST_HOTELES_ENCONTRADOS).isDisplayed();
     }
 
 }
